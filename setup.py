@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-chunks2',
-    version='2.8.2',
+    version='2.8.4',
     description='Keyed blocks of content for use in your Django templates',
     keywords="django chunks templates",
     author='Clint Ecker',

@@ -47,7 +47,7 @@ class ChunkNode(template.Node):
             if tpl_is_variable:
                 self.template_name = template.Variable(self.template_name)
             else:
-                self.template_name = template_name
+                self.template_name = name
 
         self.key = key
         self.is_variable = is_variable
@@ -141,7 +141,7 @@ class BasicChunkWrapper(object):
                          content_type=self.content_type)
 
     def prepare(self, parser, token):
-        u"""
+        """
         The parser checks for following tag-configurations::
 
             {% chunk {key} %}

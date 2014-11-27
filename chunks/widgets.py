@@ -2,7 +2,7 @@
 
 from easy_thumbnails.widgets import ImageClearableFileInput
 
-TEMPLATE = u"""
+TEMPLATE = """
 <style>
 div.thumb {
     border: 1px solid black; background-color: #ddd;
