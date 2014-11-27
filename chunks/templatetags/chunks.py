@@ -164,9 +164,9 @@ class BasicChunkWrapper(object):
         tag_name, self.key, args = tokens[0], tokens[1], tokens[2:]
         num_args = len(args)
 
-        if num_args not in xrange(4):
+        if num_args not in range(4):
             t = "%r tag should have up to three arguments"
-            raise template.TemplateSyntaxError, t % (tokens[0],)
+            raise template.TemplateSyntaxError(t % (tokens[0],))
 
         if num_args >= 1:
             self.cache_time = args[0]
